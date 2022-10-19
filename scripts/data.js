@@ -30,5 +30,32 @@ const data = {
       prereqs: [159],
       credits: 3,
     },
+    {
+      prefix: "CS",
+      number: "430",
+      title: "Programming Languages",
+      url: "https://catalog.jmu.edu/preview_course_nopop.php?catoid=50&coid=257205",
+      desc: "Several actual programming languages are studied in terms of the fundamental principles of computer programming language design, including object-oriented programming, functional programming, concurrent programming and logic programming.",
+      prereqs: [240, 261],
+      credits: 3
+    }, 
+    {
+      prefix: "CS",
+      number: "345",
+      title: "Software Engineering",
+      url: "https://catalog.jmu.edu/preview_course_nopop.php?catoid=50&coid=257201",
+      desc: "Study of modern methods and tools for the development of software products. Topics include software development process models, software development tools, design and construction principles and practice, software quality assurance and program management.",
+      prereqs: [159],
+      credits: 3
+    },
+    {
+      prefix: "CS",
+      number: "361",
+      title: "Computer Systems II",
+      url: "https://catalog.jmu.edu/preview_course_nopop.php?catoid=50&coid=257226",
+      desc: "Intermediate exploration of modern interrupt-driven computer systems. Explores models of computation and complex systems, techniques for communication and synchronization of parallel and concurrent software, and the protocols that make up the Internet.",
+      prereqs: [261],
+      credits: 3
+    }
   ],
 };

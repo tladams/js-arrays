@@ -42,7 +42,6 @@ const filterCourseCard = (markup, query) => {
   return markup.toLowerCase().includes(query.toLowerCase());
 };
 
-// 3. we update the result count and related summary info as we filter
 const searchButton = document.getElementById("search-btn")
 searchButton.addEventListener("click", (ev) => {
   console.log(ev)
@@ -63,5 +62,17 @@ searchButton.addEventListener("click", (ev) => {
     document.write(card);
   });
   */
+
 });
+
+// 3. we update the result count and related summary info as we filter
+function updateCount() {
+  const count = document.getElementById("result-count");
+  const countValue = filteredCourseCards.length;
+  count.innerText = `${countValue} items`; 
+} 
+
+updateCount();
+
+
 

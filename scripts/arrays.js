@@ -73,6 +73,16 @@ function updateCount(cards) {
   count.innerText = `${countValue} items`; 
 } 
 
+function updateCost(cards) {
+  const cost = document.getElementById("result-cost");
+  cards.forEach((cardCost) => 
+    cardCost += cards.items.credits 
+  );
+  cards.forEach((prereqCost) =>
+    prereqCost += cards.items.prereqs.credits
+  )
+}
+
 
 
 

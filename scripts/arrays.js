@@ -44,12 +44,12 @@ const filterCourseCard = (markup, query) => {
 
 const searchButton = document.getElementById("search-btn")
 searchButton.addEventListener("click", (ev) => {
-  console.log(ev)
+  console.log(ev);
   ev.preventDefault();
-  console.log("query text")
-  const searchField = document.querySelector('input[type="query-text"]');
+  console.log("query text");
+  const searchField = document.querySelector('input[name="query-text"]');
   const queryText = searchField.value;
-  console.log(queryText)
+  console.log(queryText);
 
   const filteredCourseCards = courseCards.filter((card) =>
     filterCourseCard(card, queryText)
@@ -62,17 +62,18 @@ searchButton.addEventListener("click", (ev) => {
     document.write(card);
   });
   */
+  updateCount(filteredCourseCards);
 
 });
 
 // 3. we update the result count and related summary info as we filter
-function updateCount() {
+function updateCount(cards) {
   const count = document.getElementById("result-count");
-  const countValue = filteredCourseCards.length;
+  const countValue = cards.length;
   count.innerText = `${countValue} items`; 
 } 
 
-updateCount();
+
 
 
 
